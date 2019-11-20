@@ -52,17 +52,71 @@ table {
 * {
     box-sizing: border-box;
 }
+@header2:teal;
+@pargraph:black;
 
 html, body {
 	height: 100%;
 }
 
-nav {
-	width: 80%;
+nav a {
+	width: 100%;
+	color: black;
 	display: flex;
+	display: inline;
+	background: lightgrey;
 	justify-content: right;
-		a {
-			padding: 1em;
-		}
 }
+
+.container {
+	width: 100%;
+	padding: 5em;
+	background: lightgrey;
+	display: flex;
+	display: row-reverse;
+	
+	.leftbox {
+		width: 50%;
+			img {
+				width: 100%;
+			}
+	}
+
+	.rightbox {
+		width: 50%;
+		padding: 6em;
+		
+	}
+}
+h1 {
+	font-family: 'Courier New', Courier, monospace;
+	padding: 1em;
+	font-size: 5em;
+	color: @header2;
+	text-align: center;
+}
+
+h2 {
+	font-family: 'Courier New', Courier, monospace;
+	margin: 3em;
+	text-align: left;
+	color: @header2;
+	font-size: 2em;
+}
+
+h3 {
+	font-family: 'Courier New', Courier, monospace ;
+
+}
+p {
+	font-size: 1em;
+	font-family: 'Courier New', Courier, monospace;
+	padding: 10px;
+	line-height: 1.4;
+	color: @pargraph
+}
+
+
+
+
 

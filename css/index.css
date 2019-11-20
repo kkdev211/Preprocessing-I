@@ -134,11 +134,52 @@ html,
 body {
   height: 100%;
 }
-nav {
-  width: 80%;
+nav a {
+  width: 100%;
+  color: black;
   display: flex;
+  display: inline;
+  background: lightgrey;
   justify-content: right;
 }
-nav a {
+.container {
+  width: 100%;
+  padding: 5em;
+  background: lightgrey;
+  display: flex;
+  display: row-reverse;
+}
+.container .leftbox {
+  width: 50%;
+}
+.container .leftbox img {
+  width: 100%;
+}
+.container .rightbox {
+  width: 50%;
+  padding: 6em;
+}
+h1 {
+  font-family: 'Courier New', Courier, monospace;
   padding: 1em;
+  font-size: 5em;
+  color: teal;
+  text-align: center;
+}
+h2 {
+  font-family: 'Courier New', Courier, monospace;
+  margin: 3em;
+  text-align: left;
+  color: teal;
+  font-size: 2em;
+}
+h3 {
+  font-family: 'Courier New', Courier, monospace;
+}
+p {
+  font-size: 1em;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 10px;
+  line-height: 1.4;
+  color: black;
 }
