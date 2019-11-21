@@ -133,14 +133,28 @@ table {
 html,
 body {
   height: 100%;
+  font-family: 'Courier New', Courier, monospace;
 }
-nav a {
+.navbar {
+  float: left;
   width: 100%;
+  background-color: lightgray;
+  padding: 1em;
+}
+.navbar ul {
+  float: right;
+  background-color: lightgray;
+  height: 20px;
+  padding-left: 150px;
+  font-family: 'Courier New', Courier, monospace;
   color: black;
   display: flex;
-  display: inline;
-  background: lightgrey;
-  justify-content: right;
+  justify-content: space-between;
+}
+.navbar ul a {
+  color: black;
+  padding: 0 10px;
+  text-direction: none;
 }
 .container {
   width: 100%;
@@ -149,11 +163,21 @@ nav a {
   display: flex;
   display: row-reverse;
 }
+@media (max-width: 500px) {
+  .container {
+    width: 100%;
+    padding: 10px;
+  }
+}
 .container .leftbox {
   width: 50%;
 }
 .container .leftbox img {
   width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 .container .rightbox {
   width: 50%;
@@ -168,13 +192,13 @@ h1 {
 }
 h2 {
   font-family: 'Courier New', Courier, monospace;
-  margin: 3em;
   text-align: left;
   color: teal;
   font-size: 2em;
 }
 h3 {
   font-family: 'Courier New', Courier, monospace;
+  margin: 0em;
 }
 p {
   font-size: 1em;
@@ -182,4 +206,35 @@ p {
   padding: 10px;
   line-height: 1.4;
   color: black;
+}
+.about {
+  padding: 2em;
+}
+.bottomcontainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+.bottomcontainer .leftside {
+  width: 50%;
+}
+.bottomcontainer .rightside {
+  width: 50%;
+}
+.footer-content {
+  margin-top: 50px;
+}
+.footer-content .btn-class {
+  padding: 10px 40px 10px 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  background-color: lightgray;
+  color: black;
+  font-family: 'Courier New', Courier, monospace;
+  cursor: pointer;
+}
+.footer-content .btn-class:hover {
+  background-color: #a0a0a0;
 }

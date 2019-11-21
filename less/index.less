@@ -54,18 +54,35 @@ table {
 }
 @header2:teal;
 @pargraph:black;
+@font: 'Courier New', Courier, monospace;
+@button:lightgray;
 
 html, body {
 	height: 100%;
+	font-family: @font;
 }
 
-nav a {
+.navbar {
+	float: left;
 	width: 100%;
-	color: black;
-	display: flex;
-	display: inline;
-	background: lightgrey;
-	justify-content: right;
+	background-color: @button;
+	padding: 1em;
+	
+	ul {
+		float: right;
+        background-color: @button;
+        height: 20px;
+		padding-left: 150px;
+		font-family: @font;
+		color: black;
+		display: flex;
+		justify-content: space-between;
+	}
+	ul a {
+		color:black;
+		padding: 0 10px;
+		text-direction: none;
+	}
 }
 
 .container {
@@ -74,22 +91,25 @@ nav a {
 	background: lightgrey;
 	display: flex;
 	display: row-reverse;
-	
+
+
 	.leftbox {
 		width: 50%;
 			img {
 				width: 100%;
+				border-top-left-radius: 10px;
+				border-top-right-radius: 10px;
+				border-bottom-left-radius: 10px;
+				border-bottom-right-radius: 10px;
 			}
 	}
 
 	.rightbox {
 		width: 50%;
 		padding: 6em;
-		
-	}
 }
 h1 {
-	font-family: 'Courier New', Courier, monospace;
+	font-family: @font;
 	padding: 1em;
 	font-size: 5em;
 	color: @header2;
@@ -97,25 +117,60 @@ h1 {
 }
 
 h2 {
-	font-family: 'Courier New', Courier, monospace;
-	margin: 3em;
+	font-family: @font;
 	text-align: left;
 	color: @header2;
 	font-size: 2em;
 }
 
 h3 {
-	font-family: 'Courier New', Courier, monospace ;
-
+	font-family: @font;
+	margin: 0em;
 }
 p {
 	font-size: 1em;
 	font-family: 'Courier New', Courier, monospace;
 	padding: 10px;
 	line-height: 1.4;
-	color: @pargraph
+	color: @pargraph;
 }
 
+.about {
+	padding: 2em;
+}
+.bottomcontainer {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 25px;
+
+	.leftside {
+		width: 50%
+	}
+
+	.rightside {
+		width: 50%;
+	}
+}
+
+.footer-content {
+	margin-top: 50px;
+
+	.btn-class {
+		padding:10px 40px 10px 10px;
+		margin-left: 10px;
+		margin-bottom: 10px;
+		border-radius: 10px;
+		background-color: @button;
+		color:@pargraph;
+		font-family: @font;
+		cursor: pointer;
+
+		&:hover {
+			background-color: darken(@button, 20%);
+		}
+	}
+}
 
 
 

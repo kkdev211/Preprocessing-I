@@ -14,11 +14,13 @@
 </head>
   
 <body>
-  <nav>
-    <a href="#">Home</a>
-    <a href="#">About</a> 
-    <a href="#">Portfolio</a>
-    <a href="#">Contact</a>
+  <nav class="navbar">
+    <ul class= "navlinks">
+     <li><a href="#">Home</a></li> 
+     <li><a href="#">About</a> </li> 
+     <li><a href="#">Portfolio</a></li>
+     <li><a href="#">Contact</a></li> 
+    </ul>
   </nav>
 
   <div class="container">
@@ -26,7 +28,6 @@
     
     <div class="rightbox">
       <h1>Lucy Gogetter</h1>
-        <h3>BS in Web Development</h3>
         <h3>Full Stack Developer</h3>
         <h3>Anywhere, USA</h3>
         <br>
@@ -42,28 +43,37 @@
   </div>
   
   
-  <section class="About"></section>
+  <section class="About">
     <h2>About</h2>
       <h3>MY BACKGROUND</h3>
         <p>I love to learn and school is fun for me. I enjoy new challenges. Let's keep learning.</p>
-  <section class="Skills"></section>
-  <h2>Skills</h2>
-    <h3>WHAT I BRING TO THE TABLE</h3>
-      <p>CSS, JS, HTML, Data Analysis</p>
-  <section class="Experience"></section>
-    <h2>Experience</h2>
-      <h3>WHERE I'VE WORKED</h3>
-      <p>Job 1</p>
-      <p>Job 2</p>
-      <p>Job 3</p>
+      </section>
+  <div class= "bottomcontainer">
+       <div class="leftside">
+        <h2>Skills</h2>
+          <h3>WHAT I BRING TO THE TABLE</h3>
+            <ul>
+              <li>CSS</li>
+              <li>JS</li>
+              <li>HTML</li>
+              <li>Data Analysis</li>
+            </ul>
+          </div> 
+        <div class="rightside">
+            <h2>Experience</h2>
+              <h3>WHERE I'VE WORKED</h3>
+                <ul>
+                  <li> Cool Tech Job</li>
+                  <li> Flower Power Company</li>
+                  <li> Code for Kids</li>
+                </ul>
+        </div>
+      </div>
 
  <footer>
     <div class="footer-content">
       <h2>I'd love to hear from you.</h2>
-      <address>
-        info@mydomain.com <br>
-        867-5309
-      </address>
+      <button class="btn-class">Email Me</button>
 
 
     </div>
