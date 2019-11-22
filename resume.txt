@@ -1,0 +1,3 @@
+<a href="images/bird.png" class="logo">
+      <img src="images/bird.png" alt="bird logo">
+    </a> 
